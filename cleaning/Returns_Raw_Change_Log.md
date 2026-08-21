@@ -14,33 +14,37 @@ This document records all Power Query transformations applied to `Returns_Raw.cs
 | # | Power Query Step | Columns Affected | Transformation | Purpose |
 |---:|---|---|---|---|
 | 1 | `Source` | All columns | Imported `Returns_Raw.csv` using comma delimiter and UTF-8 encoding. | Load the raw returns dataset into Power Query. |
-| 2 | `Promoted Headers` | All columns | Promoted the first row to column headers. | Apply the correct business field names. |
-| 3 | `Changed Type` | All columns | Assigned initial data types: text for identifiers/categorical fields, integer for `ReturnQty`, numeric for `ReturnAmount`, and text for `ReturnDateRaw`. | Establish a controlled schema while preserving the raw date for later parsing. |
-| 4 | `Trimmed Text` | `ReturnID` | Removed leading and trailing spaces. | Standardize the unique return identifier. |
-| 5 | `Cleaned Text` | `ReturnID` | Removed non-printable/control characters. | Prevent hidden-character inconsistencies in the return key. |
-| 6 | `Removed Duplicates` | `ReturnID` | Removed duplicate return records using `ReturnID`. | Enforce one row per return transaction and prevent duplicate return amounts from inflating KPIs. |
-| 7 | `Trimmed Text1` | `ReturnDateRaw` | Removed leading and trailing spaces. | Prepare the raw return date for reliable parsing. |
-| 8 | `Cleaned Text1` | `ReturnDateRaw` | Removed non-printable/control characters. | Prevent hidden characters from causing date conversion errors. |
-| 9 | `Trimmed Text2` | `OriginalInvoiceID` | Removed leading and trailing spaces. | Standardize invoice identifiers used to trace returns back to original sales transactions. |
-| 10 | `Cleaned Text2` | `OriginalInvoiceID` | Removed non-printable/control characters. | Ensure reliable matching with the original sales invoice. |
-| 11 | `Trimmed Text3` | `RepID` | Removed leading and trailing spaces. | Standardize sales representative identifiers before relationships. |
-| 12 | `Cleaned Text3` | `RepID` | Removed non-printable/control characters. | Prevent mismatches with `Dim_Reps`. |
-| 13 | `Capitalized Each Word` | `RepID` | Applied Proper Case formatting. | Standardize representative ID text casing. |
-| 14 | `Trimmed Text4` | `AccountID` | Removed leading and trailing spaces. | Standardize account identifiers before model relationships. |
-| 15 | `Cleaned Text4` | `AccountID` | Removed non-printable/control characters. | Prevent mismatches with `Dim_Accounts`. |
-| 16 | `Trimmed Text5` | `ProductCodeRaw` | Removed leading and trailing spaces. | Standardize raw product codes before matching to the product dimension. |
-| 17 | `Cleaned Text5` | `ProductCodeRaw` | Removed non-printable/control characters. | Prevent hidden-character mismatches in product relationships. |
-| 18 | `Capitalized Each Word1` | `ProductCodeRaw` | Applied Proper Case formatting. | Normalize product-code casing. |
-| 19 | `Trimmed Text6` | `ReturnReason` | Removed leading and trailing spaces. | Standardize return-reason values. |
-| 20 | `Cleaned Text6` | `ReturnReason` | Removed non-printable/control characters. | Avoid hidden-value inconsistencies in return analysis. |
-| 21 | `Capitalized Each Word2` | `ReturnReason`, `Status` | Applied Proper Case formatting. | Standardize return-reason and status labels for reporting. |
-| 22 | `Trimmed Text7` | `Status` | Removed leading and trailing spaces. | Standardize return-status values. |
-| 23 | `Cleaned Text7` | `Status` | Removed non-printable/control characters. | Prevent hidden-character inconsistencies in filtering and grouping. |
-| 24 | `Added Custom` | `ReturnDateRaw` → `ReturnDate` | Created a standardized date field by attempting `en-US` parsing first, then `en-GB`; unresolved values return `null`. | Handle mixed return-date formats while keeping query execution resilient. |
-| 25 | `Removed Columns` | `ReturnDateRaw` | Removed the original raw date field after creating `ReturnDate`. | Retain only the standardized analytical date field. |
-| 26 | `Changed Type1` | `ReturnDate` | Explicitly converted the new field to Date type. | Enable date relationships and time-based return analysis. |
-| 27 | `Reordered Columns` | All retained columns | Reordered fields into a logical analytical structure. | Improve readability and prepare the table for loading into the data model. |
-| 28 | `Renamed Columns` | `ProductCodeRaw` | Renamed `ProductCodeRaw` to `ProductCode`. | Remove the `Raw` suffix after product-code standardization. |
+| 2 | `Promoted Headers` | All columns | Promoted the first row to headers. | Apply the correct business field names. |
+| 3 | `Changed Type` | All columns | Assigned text types to identifiers and categorical fields, integer type to `ReturnQty`, numeric type to `ReturnAmount`, and retained `ReturnDateRaw` as text. | Establish a controlled schema while preserving the raw date for custom parsing. |
+| 4 | `Trimmed Text` | `ReturnID` | Removed leading and trailing spaces. | Prepare the return key for standardization. |
+| 5 | `Cleaned Text` | `ReturnID` | Removed non-printable/control characters. | Prevent hidden-character inconsistencies. |
+| 6 | `Uppercased Text1` | `ReturnID` | Converted the return key to uppercase. | Enforce consistent identifier formatting. |
+| 7 | `Removed Duplicates` | `ReturnID` | Removed duplicate records based on `ReturnID`. | Enforce one row per return transaction and prevent duplicated return values from inflating KPIs. |
+| 8 | `Trimmed Text1` | `ReturnDateRaw` | Removed leading/trailing spaces. | Prepare raw dates for parsing. |
+| 9 | `Cleaned Text1` | `ReturnDateRaw` | Removed non-printable/control characters. | Reduce date-parsing errors caused by hidden characters. |
+| 10 | `Trimmed Text2` | `OriginalInvoiceID` | Removed leading/trailing spaces. | Prepare the original invoice key for matching. |
+| 11 | `Cleaned Text2` | `OriginalInvoiceID` | Removed non-printable/control characters. | Prevent hidden-character mismatches with sales invoices. |
+| 12 | `Uppercased Text2` | `OriginalInvoiceID` | Converted original invoice IDs to uppercase. | Align return invoice references with standardized `InvoiceID` values in the sales fact table. |
+| 13 | `Trimmed Text3` | `RepID` | Removed leading/trailing spaces. | Prepare the representative key for relationships. |
+| 14 | `Cleaned Text3` | `RepID` | Removed non-printable/control characters. | Prevent hidden-character relationship issues. |
+| 15 | `Upper RepID` | `RepID` | Converted representative IDs to uppercase. | Align the key with `Dim_Reps`. |
+| 16 | `Trimmed Text4` | `AccountID` | Removed leading/trailing spaces. | Prepare account identifiers for relationships. |
+| 17 | `Cleaned Text4` | `AccountID` | Removed non-printable/control characters. | Prevent hidden-character mismatches. |
+| 18 | `Uppercased Text` | `AccountID` | Converted account IDs to uppercase. | Align the key with `Dim_Accounts`. |
+| 19 | `Trimmed Text5` | `ProductCodeRaw` | Removed leading/trailing spaces. | Prepare raw product codes for standardization. |
+| 20 | `Cleaned Text5` | `ProductCodeRaw` | Removed non-printable/control characters. | Prevent hidden-character product-key mismatches. |
+| 21 | `Upper Product Code` | `ProductCodeRaw` | Converted product codes to uppercase. | Align product keys with `Dim_Products`. |
+| 22 | `Trimmed Text6` | `ReturnReason` | Removed leading/trailing spaces. | Prepare return-reason values for standardization. |
+| 23 | `Cleaned Text6` | `ReturnReason` | Removed non-printable/control characters. | Prevent hidden-value inconsistencies. |
+| 24 | `Capitalized Each Word2` | `ReturnReason` | Applied Proper Case. | Standardize return-reason labels for reporting. |
+| 25 | `Trimmed Text7` | `Status` | Removed leading/trailing spaces. | Prepare return-status values for standardization. |
+| 26 | `Cleaned Text7` | `Status` | Removed non-printable/control characters. | Prevent hidden-value inconsistencies. |
+| 27 | `Capitalized Each Word` | `Status` | Applied Proper Case. | Standardize status labels for reporting. |
+| 28 | `Added Custom` | `ReturnDateRaw` → `ReturnDate` | Parsed dates using `en-GB` first and `en-US` second; unresolved values return `null`. | Standardize mixed date representations while keeping the query resilient. |
+| 29 | `Removed Columns` | `ReturnDateRaw` | Removed the original raw date column. | Retain only the standardized analytical return date. |
+| 30 | `Changed Type1` | `ReturnDate` | Converted the standardized field to Date type. | Enable date relationships and time-based return analysis. |
+| 31 | `Reordered Columns` | All retained columns | Reordered the final fields into a logical analytical structure. | Improve readability and prepare the table for model loading. |
+| 32 | `Renamed Columns` | `ProductCodeRaw` | Renamed `ProductCodeRaw` to `ProductCode`. | Remove the `Raw` suffix after product-code standardization. |
 
 ---
 
@@ -61,38 +65,37 @@ This document records all Power Query transformations applied to `Returns_Raw.cs
 
 ## Data Quality Rules Applied
 
-- Standardized identifiers using Trim and Clean transformations.
+- Standardized all key identifiers with Trim, Clean, and uppercase formatting.
 - Removed duplicate return transactions using `ReturnID`.
-- Standardized product codes, return reasons, and statuses.
-- Standardized mixed raw return-date formats into a single `ReturnDate`.
+- Standardized return reason and status labels.
+- Standardized mixed raw return dates into a single `ReturnDate`.
 - Explicitly assigned numeric and date data types.
-- Preserved the relationship between returns and original sales through `OriginalInvoiceID`.
-- Prepared `RepID`, `AccountID`, and `ProductCode` for relationships with their respective dimension tables.
+- Preserved `OriginalInvoiceID` for traceability back to the original sales invoice.
+- Prepared `RepID`, `AccountID`, and `ProductCode` for relationships with their corresponding dimensions.
+- Preserved one-row-per-return granularity for downstream return analysis.
 
 ---
 
-## Modeling Note
+## Modeling Preparation
 
-The final returns table should be treated as a **fact table**. Descriptive attributes such as representative name, account details, product name, therapeutic area, territory, and manager should be retrieved through relationships with the corresponding dimension tables rather than duplicated in `Returns`.
+The cleaned dataset is structured as the primary **returns fact table**.
 
-`OriginalInvoiceID` can also be used to trace a return back to the associated sales transaction when invoice-level return analysis is required.
+Key relationship fields:
+
+- `RepID` → `Dim_Reps`
+- `AccountID` → `Dim_Accounts`
+- `ProductCode` → `Dim_Products`
+- `ReturnDate` → Date dimension
+
+`OriginalInvoiceID` is retained for invoice-level traceability to the original sales transaction.
 
 ---
 
 ## Date Parsing Assumption
 
-The current date-cleaning rule attempts `en-US` before `en-GB`.
+The parsing logic attempts:
 
-This creates an important ambiguity for values where both the day and month are 12 or less. For example:
+1. `en-GB`
+2. `en-US`
 
-`05/07/2025`
-
-could be interpreted as:
-
-- **May 7, 2025** under `en-US`, or
-- **5 July 2025** under `en-GB`.
-
-Because `en-US` is attempted first in the current query, the value will normally be interpreted as **May 7, 2025**.
-
-For consistency with the `Sales_Raw` and `Visits_Raw` cleaning logic, consider defining a single documented source-date convention or using a deterministic source-system rule where possible.
-
+This aligns the first parsing priority with the day/month convention used in the other project fact tables. For ambiguous values where both the day and month are 12 or below, the `en-GB` interpretation takes precedence.
