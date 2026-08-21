@@ -96,23 +96,3 @@ Because `en-US` is attempted first in the current query, the value will normally
 
 For consistency with the `Sales_Raw` and `Visits_Raw` cleaning logic, consider defining a single documented source-date convention or using a deterministic source-system rule where possible.
 
----
-
-## Review Notes
-
-### 1. `Text.Proper` on Identifier Columns
-`RepID` and `ProductCodeRaw` are identifiers rather than descriptive text. `Text.Proper` works with the current values, but identifiers are generally safer to standardize using `Text.Upper` instead.
-
-For example:
-
-`r001` → `R001`  
-`p004` → `P004`
-
-This makes the intention of the transformation clearer and avoids unintended casing behavior if future identifiers contain letters in different positions.
-
-### 2. Status Cleaning Order
-`Status` is converted to Proper Case before Trim and Clean are applied. The final result is still cleaned, but a more consistent transformation order would normally be:
-
-**Trim → Clean → Proper Case**
-
-This is not a blocker, but using the same order across all categorical fields makes the Power Query pipeline easier to maintain and document.
