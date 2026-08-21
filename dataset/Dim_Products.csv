@@ -1,0 +1,13 @@
+﻿ProductCode,ProductName,TherapeuticArea,Category,PackSize,ListPrice,UnitCost,LaunchDate,Status
+P001,Gynova Plus,Gyna,Women's Health,Capsules,198,92,2023-02-01,Active
+P002,Femiron,Gyna,Iron & Supplements,Tablets,145,61,2022-07-01,Active
+P003,Ovarest,Gyna,Women's Health,Tablets,235,108,2024-01-15,Active
+P004,PediaCef,Pedia,Anti-infective,Suspension,165,74,2022-10-01,Active
+P005,BronchoKid,Pedia,Respiratory,Syrup,118,49,2023-09-01,Active
+P006,VitaGrow,Pedia,Vitamins,Syrup,132,56,2024-05-01,Active
+P007,GastroRelief,Internal,Gastro,Tablets,175,72,2022-03-01,Active
+P008,CardioZen,Internal,Cardiovascular,Tablets,210,97,2023-05-01,Active
+P009,DiaBalance,Internal,Metabolic,Tablets,188,81,2023-11-01,Active
+P010,RespiraMax,Internal,Respiratory,Capsules,225,103,2024-02-01,Active
+P011,ImmunoCare,Internal,Vitamins,Capsules,160,68,2024-08-01,Active
+P012,CalmGut,Internal,Gastro,Sachets,155,65,2025-01-01,Active

@@ -1,0 +1,343 @@
+﻿DoctorID,DoctorName,Specialty,TerritoryID,TerritoryName,Governorate,DoctorClass,PotentialScore,PreferredVisitDay,Status
+D0001,Dr. Rana Nabil,Gyna,T01,Shebin El-Kom,Monufia,B,77,Wednesday,Active
+D0002,Dr. Rana Ali,Internal,T01,Shebin El-Kom,Monufia,A,82,Sunday,Active
+D0003,Dr. Mina Saad,Pedia,T01,Shebin El-Kom,Monufia,B,58,Thursday,Active
+D0004,Dr. Rana Emad,Pedia,T01,Shebin El-Kom,Monufia,C,52,Tuesday,Active
+D0005,Dr. Mostafa Nabil,Internal,T01,Shebin El-Kom,Monufia,B,71,Tuesday,Active
+D0006,Dr. Aya Wael,Internal,T01,Shebin El-Kom,Monufia,A,76,Tuesday,Active
+D0007,Dr. Mahmoud Adel,Internal,T01,Shebin El-Kom,Monufia,C,39,Thursday,Active
+D0008,Dr. Mahmoud Nabil,Pedia,T01,Shebin El-Kom,Monufia,C,35,Monday,Active
+D0009,Dr. Mostafa Samir,Gyna,T01,Shebin El-Kom,Monufia,B,59,Tuesday,Active
+D0010,Dr. Aya Saad,Internal,T01,Shebin El-Kom,Monufia,C,58,Monday,Active
+D0011,Dr. Mohamed Saad,Internal,T01,Shebin El-Kom,Monufia,A,80,Wednesday,Active
+D0012,Dr. Aya Emad,Pedia,T01,Shebin El-Kom,Monufia,B,76,Wednesday,Active
+D0013,Dr. Mohamed Emad,Gyna,T01,Shebin El-Kom,Monufia,C,33,Monday,Active
+D0014,Dr. Nour Wael,Pedia,T01,Shebin El-Kom,Monufia,B,78,Sunday,Active
+D0015,Dr. Aya Tarek,Pedia,T01,Shebin El-Kom,Monufia,B,67,Thursday,Active
+D0016,Dr. Aya Hassan,Internal,T01,Shebin El-Kom,Monufia,C,48,Tuesday,Active
+D0017,Dr. Sara Adel,Pedia,T01,Shebin El-Kom,Monufia,B,66,Tuesday,Active
+D0018,Dr. Aya Ali,Internal,T01,Shebin El-Kom,Monufia,B,60,Thursday,Active
+D0019,Dr. Mina Wael,Gyna,T01,Shebin El-Kom,Monufia,C,39,Sunday,Active
+D0020,Dr. Aya Emad,Internal,T01,Shebin El-Kom,Monufia,B,66,Tuesday,Active
+D0021,Dr. Mostafa Ali,Gyna,T01,Shebin El-Kom,Monufia,C,50,Tuesday,Active
+D0022,Dr. Mostafa Nabil,Internal,T01,Shebin El-Kom,Monufia,B,43,Thursday,Active
+D0023,Dr. Nour Emad,Gyna,T01,Shebin El-Kom,Monufia,C,40,Tuesday,Active
+D0024,Dr. Nour Wael,Internal,T01,Shebin El-Kom,Monufia,C,57,Thursday,Active
+D0025,Dr. Aya Adel,Pedia,T01,Shebin El-Kom,Monufia,A,85,Sunday,Active
+D0026,Dr. Mostafa Ali,Internal,T01,Shebin El-Kom,Monufia,B,65,Sunday,Active
+D0027,Dr. Mina Nabil,Gyna,T01,Shebin El-Kom,Monufia,C,37,Monday,Active
+D0028,Dr. Mohamed Tarek,Internal,T01,Shebin El-Kom,Monufia,A,87,Tuesday,Active
+D0029,Dr. Nour Saad,Internal,T02,Menouf,Monufia,A,83,Thursday,Active
+D0030,Dr. Mostafa Nabil,Internal,T02,Menouf,Monufia,B,78,Thursday,Active
+D0031,Dr. Rana Ali,Internal,T02,Menouf,Monufia,B,68,Wednesday,Active
+D0032,Dr. Mostafa Fathy,Pedia,T02,Menouf,Monufia,C,37,Wednesday,Active
+D0033,Dr. Ahmed Wael,Pedia,T02,Menouf,Monufia,C,49,Sunday,Active
+D0034,Dr. Mohamed Emad,Pedia,T02,Menouf,Monufia,C,52,Monday,Active
+D0035,Dr. Nour Wael,Gyna,T02,Menouf,Monufia,A,84,Tuesday,Active
+D0036,Dr. Sara Wael,Internal,T02,Menouf,Monufia,A,92,Monday,Active
+D0037,Dr. Ahmed Tarek,Gyna,T02,Menouf,Monufia,B,59,Sunday,Active
+D0038,Dr. Sara Hassan,Internal,T02,Menouf,Monufia,B,73,Monday,Active
+D0039,Dr. Nour Tarek,Pedia,T02,Menouf,Monufia,A,77,Sunday,Active
+D0040,Dr. Mina Samir,Internal,T02,Menouf,Monufia,A,82,Wednesday,Active
+D0041,Dr. Nour Emad,Pedia,T02,Menouf,Monufia,B,64,Tuesday,Active
+D0042,Dr. Mostafa Wael,Pedia,T02,Menouf,Monufia,B,66,Sunday,Active
+D0043,Dr. Mahmoud Nabil,Internal,T02,Menouf,Monufia,A,86,Wednesday,Active
+D0044,Dr. Mostafa Fathy,Pedia,T02,Menouf,Monufia,B,73,Sunday,Active
+D0045,Dr. Mariam Saad,Internal,T02,Menouf,Monufia,C,52,Thursday,Active
+D0046,Dr. Mahmoud Emad,Internal,T02,Menouf,Monufia,B,62,Monday,Active
+D0047,Dr. Mohamed Hassan,Gyna,T02,Menouf,Monufia,C,44,Monday,Active
+D0048,Dr. Mohamed Emad,Pedia,T02,Menouf,Monufia,C,50,Thursday,Active
+D0049,Dr. Mostafa Samir,Pedia,T02,Menouf,Monufia,B,74,Tuesday,Active
+D0050,Dr. Mostafa Emad,Gyna,T02,Menouf,Monufia,A,93,Wednesday,Active
+D0051,Dr. Mohamed Nabil,Pedia,T03,Ashmoun,Monufia,B,67,Tuesday,Active
+D0052,Dr. Sara Tarek,Internal,T03,Ashmoun,Monufia,B,64,Sunday,Active
+D0053,Dr. Aya Emad,Internal,T03,Ashmoun,Monufia,C,62,Wednesday,Active
+D0054,Dr. Mina Nabil,Internal,T03,Ashmoun,Monufia,B,60,Monday,Active
+D0055,Dr. Mahmoud Fathy,Gyna,T03,Ashmoun,Monufia,B,73,Wednesday,Active
+D0056,Dr. Sara Wael,Internal,T03,Ashmoun,Monufia,A,84,Monday,Active
+D0057,Dr. Mahmoud Nabil,Pedia,T03,Ashmoun,Monufia,C,55,Sunday,Active
+D0058,Dr. Mahmoud Hassan,Internal,T03,Ashmoun,Monufia,A,90,Sunday,Active
+D0059,Dr. Rana Ali,Internal,T03,Ashmoun,Monufia,B,73,Thursday,Active
+D0060,Dr. Sara Wael,Pedia,T03,Ashmoun,Monufia,C,53,Thursday,Active
+D0061,Dr. Aya Adel,Internal,T03,Ashmoun,Monufia,A,88,Monday,Active
+D0062,Dr. Mina Saad,Internal,T03,Ashmoun,Monufia,A,86,Monday,Active
+D0063,Dr. Rana Hassan,Pedia,T03,Ashmoun,Monufia,C,41,Wednesday,Active
+D0064,Dr. Mahmoud Hassan,Gyna,T03,Ashmoun,Monufia,B,70,Tuesday,Active
+D0065,Dr. Nour Samir,Gyna,T03,Ashmoun,Monufia,A,76,Tuesday,Active
+D0066,Dr. Sara Ali,Gyna,T03,Ashmoun,Monufia,B,63,Sunday,Active
+D0067,Dr. Rana Tarek,Pedia,T03,Ashmoun,Monufia,C,44,Monday,Active
+D0068,Dr. Mohamed Nabil,Internal,T03,Ashmoun,Monufia,C,53,Tuesday,Active
+D0069,Dr. Sara Saad,Internal,T03,Ashmoun,Monufia,C,50,Wednesday,Active
+D0070,Dr. Mariam Ali,Internal,T03,Ashmoun,Monufia,C,58,Wednesday,Active
+D0071,Dr. Mahmoud Nabil,Pedia,T03,Ashmoun,Monufia,C,46,Wednesday,Active
+D0072,Dr. Rana Saad,Internal,T03,Ashmoun,Monufia,B,53,Monday,Active
+D0073,Dr. Rana Ali,Gyna,T04,Sadat City,Monufia,B,70,Tuesday,Active
+D0074,Dr. Sara Hassan,Pedia,T04,Sadat City,Monufia,A,83,Tuesday,Active
+D0075,Dr. Ahmed Hassan,Internal,T04,Sadat City,Monufia,A,75,Thursday,Active
+D0076,Dr. Sara Emad,Internal,T04,Sadat City,Monufia,C,37,Monday,Active
+D0077,Dr. Mohamed Nabil,Pedia,T04,Sadat City,Monufia,A,81,Tuesday,Active
+D0078,Dr. Mariam Adel,Internal,T04,Sadat City,Monufia,B,62,Monday,Active
+D0079,Dr. Nour Emad,Pedia,T04,Sadat City,Monufia,B,66,Sunday,Active
+D0080,Dr. Mohamed Tarek,Internal,T04,Sadat City,Monufia,C,52,Sunday,Active
+D0081,Dr. Mahmoud Tarek,Pedia,T04,Sadat City,Monufia,C,47,Monday,Active
+D0082,Dr. Mohamed Fathy,Gyna,T04,Sadat City,Monufia,C,44,Thursday,Active
+D0083,Dr. Mariam Tarek,Internal,T04,Sadat City,Monufia,B,63,Tuesday,Active
+D0084,Dr. Rana Samir,Pedia,T04,Sadat City,Monufia,A,71,Sunday,Active
+D0085,Dr. Mostafa Fathy,Gyna,T04,Sadat City,Monufia,C,50,Wednesday,Active
+D0086,Dr. Mostafa Tarek,Pedia,T04,Sadat City,Monufia,C,41,Tuesday,Active
+D0087,Dr. Rana Wael,Gyna,T04,Sadat City,Monufia,C,47,Sunday,Active
+D0088,Dr. Mina Wael,Internal,T04,Sadat City,Monufia,B,73,Monday,Active
+D0089,Dr. Aya Saad,Internal,T04,Sadat City,Monufia,B,59,Monday,Active
+D0090,Dr. Rana Wael,Gyna,T04,Sadat City,Monufia,A,85,Monday,Active
+D0091,Dr. Sara Ali,Gyna,T04,Sadat City,Monufia,A,94,Monday,Active
+D0092,Dr. Nour Wael,Internal,T04,Sadat City,Monufia,B,60,Thursday,Active
+D0093,Dr. Mina Nabil,Internal,T04,Sadat City,Monufia,A,92,Monday,Active
+D0094,Dr. Aya Samir,Internal,T04,Sadat City,Monufia,A,83,Tuesday,Active
+D0095,Dr. Mostafa Wael,Internal,T04,Sadat City,Monufia,B,57,Monday,Active
+D0096,Dr. Mostafa Hassan,Internal,T04,Sadat City,Monufia,B,65,Thursday,Active
+D0097,Dr. Nour Nabil,Gyna,T04,Sadat City,Monufia,C,47,Monday,Active
+D0098,Dr. Mahmoud Ali,Internal,T04,Sadat City,Monufia,A,78,Thursday,Active
+D0099,Dr. Nour Emad,Pedia,T04,Sadat City,Monufia,B,66,Wednesday,Active
+D0100,Dr. Sara Tarek,Internal,T04,Sadat City,Monufia,C,54,Wednesday,Active
+D0101,Dr. Mostafa Hassan,Internal,T05,Tanta,Gharbia,B,68,Wednesday,Active
+D0102,Dr. Mostafa Emad,Internal,T05,Tanta,Gharbia,C,44,Sunday,Active
+D0103,Dr. Mariam Tarek,Gyna,T05,Tanta,Gharbia,A,81,Tuesday,Active
+D0104,Dr. Sara Emad,Pedia,T05,Tanta,Gharbia,C,48,Monday,Active
+D0105,Dr. Ahmed Tarek,Internal,T05,Tanta,Gharbia,B,73,Sunday,Active
+D0106,Dr. Rana Adel,Internal,T05,Tanta,Gharbia,C,42,Tuesday,Active
+D0107,Dr. Mahmoud Saad,Gyna,T05,Tanta,Gharbia,B,69,Wednesday,Active
+D0108,Dr. Sara Wael,Pedia,T05,Tanta,Gharbia,B,65,Sunday,Active
+D0109,Dr. Ahmed Wael,Gyna,T05,Tanta,Gharbia,B,76,Wednesday,Active
+D0110,Dr. Nour Hassan,Pedia,T05,Tanta,Gharbia,C,48,Wednesday,Active
+D0111,Dr. Sara Fathy,Internal,T05,Tanta,Gharbia,A,98,Monday,Active
+D0112,Dr. Sara Nabil,Gyna,T05,Tanta,Gharbia,C,52,Monday,Active
+D0113,Dr. Mahmoud Wael,Pedia,T05,Tanta,Gharbia,B,62,Sunday,Active
+D0114,Dr. Mariam Emad,Pedia,T05,Tanta,Gharbia,A,79,Monday,Active
+D0115,Dr. Mostafa Adel,Pedia,T05,Tanta,Gharbia,B,58,Tuesday,Active
+D0116,Dr. Mohamed Hassan,Internal,T05,Tanta,Gharbia,C,57,Wednesday,Active
+D0117,Dr. Nour Saad,Internal,T05,Tanta,Gharbia,B,63,Tuesday,Active
+D0118,Dr. Mariam Wael,Pedia,T05,Tanta,Gharbia,A,98,Thursday,Active
+D0119,Dr. Mahmoud Saad,Gyna,T05,Tanta,Gharbia,A,98,Thursday,Active
+D0120,Dr. Aya Saad,Pedia,T05,Tanta,Gharbia,A,79,Monday,Active
+D0121,Dr. Mahmoud Adel,Gyna,T05,Tanta,Gharbia,B,55,Monday,Active
+D0122,Dr. Nour Nabil,Pedia,T05,Tanta,Gharbia,A,79,Tuesday,Active
+D0123,Dr. Sara Saad,Internal,T05,Tanta,Gharbia,B,73,Thursday,Active
+D0124,Dr. Aya Saad,Internal,T05,Tanta,Gharbia,C,47,Wednesday,Active
+D0125,Dr. Mahmoud Tarek,Internal,T05,Tanta,Gharbia,B,60,Thursday,Active
+D0126,Dr. Mohamed Ali,Pedia,T05,Tanta,Gharbia,A,86,Tuesday,Active
+D0127,Dr. Mariam Samir,Gyna,T05,Tanta,Gharbia,A,82,Thursday,Active
+D0128,Dr. Nour Saad,Internal,T05,Tanta,Gharbia,B,78,Tuesday,Active
+D0129,Dr. Mostafa Hassan,Internal,T06,El Mahalla El Kubra,Gharbia,A,98,Thursday,Active
+D0130,Dr. Mostafa Adel,Gyna,T06,El Mahalla El Kubra,Gharbia,B,71,Thursday,Active
+D0131,Dr. Mariam Emad,Internal,T06,El Mahalla El Kubra,Gharbia,A,82,Wednesday,Active
+D0132,Dr. Ahmed Ali,Pedia,T06,El Mahalla El Kubra,Gharbia,C,50,Tuesday,Active
+D0133,Dr. Mostafa Ali,Internal,T06,El Mahalla El Kubra,Gharbia,B,65,Thursday,Active
+D0134,Dr. Mostafa Samir,Gyna,T06,El Mahalla El Kubra,Gharbia,B,60,Wednesday,Active
+D0135,Dr. Mohamed Fathy,Internal,T06,El Mahalla El Kubra,Gharbia,A,84,Tuesday,Active
+D0136,Dr. Mostafa Saad,Internal,T06,El Mahalla El Kubra,Gharbia,B,64,Thursday,Active
+D0137,Dr. Mahmoud Wael,Internal,T06,El Mahalla El Kubra,Gharbia,C,36,Tuesday,Active
+D0138,Dr. Aya Saad,Internal,T06,El Mahalla El Kubra,Gharbia,A,90,Wednesday,Active
+D0139,Dr. Nour Tarek,Internal,T06,El Mahalla El Kubra,Gharbia,B,69,Wednesday,Active
+D0140,Dr. Mariam Saad,Internal,T06,El Mahalla El Kubra,Gharbia,A,82,Sunday,Active
+D0141,Dr. Aya Saad,Internal,T06,El Mahalla El Kubra,Gharbia,B,65,Tuesday,Active
+D0142,Dr. Sara Samir,Internal,T06,El Mahalla El Kubra,Gharbia,B,64,Sunday,Active
+D0143,Dr. Nour Fathy,Internal,T06,El Mahalla El Kubra,Gharbia,A,98,Tuesday,Active
+D0144,Dr. Sara Saad,Internal,T06,El Mahalla El Kubra,Gharbia,B,70,Tuesday,Active
+D0145,Dr. Mariam Saad,Gyna,T06,El Mahalla El Kubra,Gharbia,A,88,Wednesday,Active
+D0146,Dr. Mina Adel,Internal,T06,El Mahalla El Kubra,Gharbia,C,49,Tuesday,Active
+D0147,Dr. Ahmed Wael,Internal,T06,El Mahalla El Kubra,Gharbia,A,75,Thursday,Active
+D0148,Dr. Mohamed Wael,Internal,T06,El Mahalla El Kubra,Gharbia,B,68,Tuesday,Active
+D0149,Dr. Aya Ali,Gyna,T06,El Mahalla El Kubra,Gharbia,B,60,Wednesday,Active
+D0150,Dr. Aya Tarek,Pedia,T06,El Mahalla El Kubra,Gharbia,A,92,Thursday,Active
+D0151,Dr. Mina Hassan,Gyna,T06,El Mahalla El Kubra,Gharbia,B,67,Wednesday,Active
+D0152,Dr. Rana Emad,Pedia,T06,El Mahalla El Kubra,Gharbia,A,87,Monday,Active
+D0153,Dr. Mahmoud Hassan,Internal,T06,El Mahalla El Kubra,Gharbia,B,75,Wednesday,Active
+D0154,Dr. Nour Adel,Gyna,T06,El Mahalla El Kubra,Gharbia,C,45,Wednesday,Active
+D0155,Dr. Sara Fathy,Internal,T06,El Mahalla El Kubra,Gharbia,C,46,Monday,Active
+D0156,Dr. Aya Ali,Pedia,T06,El Mahalla El Kubra,Gharbia,B,70,Tuesday,Active
+D0157,Dr. Mostafa Wael,Internal,T07,Benha,Qalyubia,C,44,Sunday,Active
+D0158,Dr. Mohamed Adel,Pedia,T07,Benha,Qalyubia,B,54,Sunday,Active
+D0159,Dr. Ahmed Saad,Internal,T07,Benha,Qalyubia,C,44,Wednesday,Active
+D0160,Dr. Mostafa Saad,Internal,T07,Benha,Qalyubia,C,54,Thursday,Active
+D0161,Dr. Mina Samir,Internal,T07,Benha,Qalyubia,B,69,Sunday,Active
+D0162,Dr. Ahmed Nabil,Internal,T07,Benha,Qalyubia,C,59,Sunday,Active
+D0163,Dr. Ahmed Samir,Gyna,T07,Benha,Qalyubia,A,82,Wednesday,Active
+D0164,Dr. Mina Hassan,Gyna,T07,Benha,Qalyubia,B,66,Sunday,Active
+D0165,Dr. Sara Emad,Internal,T07,Benha,Qalyubia,A,86,Tuesday,Active
+D0166,Dr. Nour Hassan,Internal,T07,Benha,Qalyubia,B,60,Wednesday,Active
+D0167,Dr. Aya Tarek,Pedia,T07,Benha,Qalyubia,B,61,Monday,Active
+D0168,Dr. Ahmed Emad,Gyna,T07,Benha,Qalyubia,A,83,Monday,Active
+D0169,Dr. Mina Adel,Internal,T07,Benha,Qalyubia,B,58,Wednesday,Active
+D0170,Dr. Mina Ali,Pedia,T07,Benha,Qalyubia,B,64,Tuesday,Active
+D0171,Dr. Mina Nabil,Gyna,T07,Benha,Qalyubia,C,46,Wednesday,Active
+D0172,Dr. Mostafa Hassan,Internal,T07,Benha,Qalyubia,B,58,Sunday,Active
+D0173,Dr. Mahmoud Tarek,Gyna,T07,Benha,Qalyubia,C,57,Thursday,Active
+D0174,Dr. Aya Adel,Internal,T07,Benha,Qalyubia,B,64,Thursday,Active
+D0175,Dr. Sara Saad,Pedia,T07,Benha,Qalyubia,B,68,Wednesday,Active
+D0176,Dr. Mohamed Adel,Pedia,T07,Benha,Qalyubia,C,53,Wednesday,Active
+D0177,Dr. Mina Hassan,Pedia,T07,Benha,Qalyubia,A,89,Sunday,Active
+D0178,Dr. Nour Ali,Gyna,T07,Benha,Qalyubia,B,70,Thursday,Active
+D0179,Dr. Mariam Wael,Pedia,T07,Benha,Qalyubia,B,65,Tuesday,Active
+D0180,Dr. Sara Samir,Internal,T07,Benha,Qalyubia,B,65,Tuesday,Active
+D0181,Dr. Mina Ali,Internal,T07,Benha,Qalyubia,B,64,Thursday,Active
+D0182,Dr. Sara Wael,Internal,T07,Benha,Qalyubia,A,89,Sunday,Active
+D0183,Dr. Aya Saad,Internal,T07,Benha,Qalyubia,A,90,Sunday,Active
+D0184,Dr. Mariam Emad,Gyna,T07,Benha,Qalyubia,C,51,Sunday,Active
+D0185,Dr. Nour Nabil,Pedia,T08,Shubra El Kheima,Qalyubia,B,59,Wednesday,Active
+D0186,Dr. Mahmoud Wael,Pedia,T08,Shubra El Kheima,Qalyubia,B,67,Sunday,Active
+D0187,Dr. Mahmoud Adel,Internal,T08,Shubra El Kheima,Qalyubia,A,83,Tuesday,Active
+D0188,Dr. Mahmoud Wael,Pedia,T08,Shubra El Kheima,Qalyubia,C,35,Thursday,Active
+D0189,Dr. Mina Saad,Gyna,T08,Shubra El Kheima,Qalyubia,B,54,Wednesday,Active
+D0190,Dr. Ahmed Samir,Internal,T08,Shubra El Kheima,Qalyubia,B,65,Thursday,Active
+D0191,Dr. Mina Adel,Gyna,T08,Shubra El Kheima,Qalyubia,B,64,Monday,Active
+D0192,Dr. Rana Wael,Gyna,T08,Shubra El Kheima,Qalyubia,C,51,Wednesday,Active
+D0193,Dr. Mina Hassan,Gyna,T08,Shubra El Kheima,Qalyubia,B,71,Wednesday,Active
+D0194,Dr. Rana Adel,Pedia,T08,Shubra El Kheima,Qalyubia,A,80,Monday,Active
+D0195,Dr. Aya Ali,Pedia,T08,Shubra El Kheima,Qalyubia,C,48,Thursday,Active
+D0196,Dr. Sara Wael,Pedia,T08,Shubra El Kheima,Qalyubia,C,50,Wednesday,Active
+D0197,Dr. Nour Saad,Internal,T08,Shubra El Kheima,Qalyubia,B,63,Tuesday,Active
+D0198,Dr. Mina Adel,Internal,T08,Shubra El Kheima,Qalyubia,A,88,Tuesday,Active
+D0199,Dr. Mohamed Hassan,Pedia,T08,Shubra El Kheima,Qalyubia,B,61,Wednesday,Active
+D0200,Dr. Mohamed Fathy,Gyna,T08,Shubra El Kheima,Qalyubia,B,67,Monday,Active
+D0201,Dr. Aya Nabil,Pedia,T08,Shubra El Kheima,Qalyubia,B,65,Sunday,Active
+D0202,Dr. Mina Fathy,Internal,T08,Shubra El Kheima,Qalyubia,B,61,Tuesday,Active
+D0203,Dr. Mohamed Saad,Gyna,T08,Shubra El Kheima,Qalyubia,A,88,Monday,Active
+D0204,Dr. Aya Hassan,Gyna,T08,Shubra El Kheima,Qalyubia,A,84,Thursday,Active
+D0205,Dr. Mina Saad,Pedia,T08,Shubra El Kheima,Qalyubia,B,65,Sunday,Active
+D0206,Dr. Rana Ali,Pedia,T08,Shubra El Kheima,Qalyubia,B,61,Sunday,Active
+D0207,Dr. Ahmed Adel,Internal,T08,Shubra El Kheima,Qalyubia,C,64,Monday,Active
+D0208,Dr. Rana Nabil,Pedia,T08,Shubra El Kheima,Qalyubia,B,74,Monday,Active
+D0209,Dr. Ahmed Tarek,Internal,T08,Shubra El Kheima,Qalyubia,A,83,Wednesday,Active
+D0210,Dr. Ahmed Adel,Internal,T08,Shubra El Kheima,Qalyubia,C,52,Tuesday,Active
+D0211,Dr. Mostafa Nabil,Internal,T08,Shubra El Kheima,Qalyubia,B,65,Sunday,Active
+D0212,Dr. Nour Fathy,Gyna,T08,Shubra El Kheima,Qalyubia,B,60,Thursday,Active
+D0213,Dr. Mina Ali,Internal,T08,Shubra El Kheima,Qalyubia,B,61,Tuesday,Active
+D0214,Dr. Sara Adel,Internal,T08,Shubra El Kheima,Qalyubia,A,96,Tuesday,Active
+D0215,Dr. Mohamed Saad,Internal,T08,Shubra El Kheima,Qalyubia,C,51,Tuesday,Active
+D0216,Dr. Mariam Emad,Internal,T08,Shubra El Kheima,Qalyubia,C,59,Tuesday,Active
+D0217,Dr. Mostafa Adel,Pedia,T08,Shubra El Kheima,Qalyubia,C,41,Sunday,Active
+D0218,Dr. Rana Ali,Internal,T08,Shubra El Kheima,Qalyubia,A,91,Wednesday,Active
+D0219,Dr. Mariam Wael,Pedia,T09,Qalyub,Qalyubia,C,54,Monday,Active
+D0220,Dr. Mina Fathy,Pedia,T09,Qalyub,Qalyubia,C,44,Thursday,Active
+D0221,Dr. Nour Ali,Gyna,T09,Qalyub,Qalyubia,C,50,Sunday,Active
+D0222,Dr. Mostafa Ali,Gyna,T09,Qalyub,Qalyubia,B,82,Tuesday,Active
+D0223,Dr. Aya Ali,Gyna,T09,Qalyub,Qalyubia,C,51,Wednesday,Active
+D0224,Dr. Aya Nabil,Pedia,T09,Qalyub,Qalyubia,B,69,Sunday,Active
+D0225,Dr. Mariam Fathy,Gyna,T09,Qalyub,Qalyubia,A,88,Thursday,Active
+D0226,Dr. Mariam Ali,Internal,T09,Qalyub,Qalyubia,B,59,Tuesday,Active
+D0227,Dr. Ahmed Fathy,Internal,T09,Qalyub,Qalyubia,C,39,Thursday,Active
+D0228,Dr. Sara Hassan,Internal,T09,Qalyub,Qalyubia,C,51,Thursday,Active
+D0229,Dr. Mostafa Adel,Pedia,T09,Qalyub,Qalyubia,A,83,Tuesday,Active
+D0230,Dr. Mariam Adel,Pedia,T09,Qalyub,Qalyubia,B,72,Monday,Active
+D0231,Dr. Sara Tarek,Internal,T09,Qalyub,Qalyubia,A,90,Wednesday,Active
+D0232,Dr. Aya Fathy,Gyna,T09,Qalyub,Qalyubia,A,82,Monday,Active
+D0233,Dr. Mina Hassan,Internal,T09,Qalyub,Qalyubia,B,59,Sunday,Active
+D0234,Dr. Mostafa Samir,Gyna,T09,Qalyub,Qalyubia,C,46,Sunday,Active
+D0235,Dr. Nour Adel,Internal,T09,Qalyub,Qalyubia,B,63,Tuesday,Active
+D0236,Dr. Aya Tarek,Internal,T09,Qalyub,Qalyubia,A,84,Monday,Active
+D0237,Dr. Nour Wael,Internal,T09,Qalyub,Qalyubia,C,55,Sunday,Active
+D0238,Dr. Mostafa Saad,Gyna,T09,Qalyub,Qalyubia,C,56,Monday,Active
+D0239,Dr. Ahmed Samir,Gyna,T09,Qalyub,Qalyubia,A,77,Monday,Active
+D0240,Dr. Mostafa Samir,Pedia,T09,Qalyub,Qalyubia,B,70,Wednesday,Active
+D0241,Dr. Mina Hassan,Internal,T10,Maadi,Cairo,C,49,Thursday,Active
+D0242,Dr. Mariam Emad,Gyna,T10,Maadi,Cairo,C,43,Wednesday,Active
+D0243,Dr. Sara Wael,Gyna,T10,Maadi,Cairo,C,42,Thursday,Active
+D0244,Dr. Rana Ali,Internal,T10,Maadi,Cairo,B,74,Sunday,Active
+D0245,Dr. Ahmed Wael,Gyna,T10,Maadi,Cairo,B,80,Thursday,Active
+D0246,Dr. Mostafa Wael,Internal,T10,Maadi,Cairo,C,42,Tuesday,Active
+D0247,Dr. Aya Nabil,Internal,T10,Maadi,Cairo,B,72,Sunday,Active
+D0248,Dr. Nour Fathy,Internal,T10,Maadi,Cairo,A,77,Wednesday,Active
+D0249,Dr. Nour Tarek,Internal,T10,Maadi,Cairo,B,58,Monday,Active
+D0250,Dr. Mahmoud Tarek,Internal,T10,Maadi,Cairo,B,70,Tuesday,Active
+D0251,Dr. Mostafa Hassan,Internal,T10,Maadi,Cairo,A,84,Thursday,Active
+D0252,Dr. Mostafa Ali,Internal,T10,Maadi,Cairo,C,46,Thursday,Active
+D0253,Dr. Mariam Hassan,Gyna,T10,Maadi,Cairo,C,51,Sunday,Active
+D0254,Dr. Nour Adel,Pedia,T10,Maadi,Cairo,C,51,Tuesday,Active
+D0255,Dr. Mohamed Fathy,Internal,T10,Maadi,Cairo,C,54,Sunday,Active
+D0256,Dr. Sara Samir,Gyna,T10,Maadi,Cairo,C,46,Sunday,Active
+D0257,Dr. Rana Emad,Internal,T10,Maadi,Cairo,C,53,Monday,Active
+D0258,Dr. Mina Nabil,Pedia,T10,Maadi,Cairo,A,91,Sunday,Active
+D0259,Dr. Mostafa Samir,Internal,T10,Maadi,Cairo,C,41,Sunday,Active
+D0260,Dr. Rana Ali,Pedia,T10,Maadi,Cairo,B,71,Wednesday,Active
+D0261,Dr. Mina Wael,Gyna,T10,Maadi,Cairo,C,41,Monday,Active
+D0262,Dr. Mohamed Ali,Gyna,T10,Maadi,Cairo,C,45,Thursday,Active
+D0263,Dr. Mariam Samir,Pedia,T10,Maadi,Cairo,B,70,Tuesday,Active
+D0264,Dr. Mina Wael,Pedia,T10,Maadi,Cairo,A,88,Wednesday,Active
+D0265,Dr. Nour Emad,Gyna,T10,Maadi,Cairo,B,73,Sunday,Active
+D0266,Dr. Mahmoud Nabil,Gyna,T10,Maadi,Cairo,B,75,Wednesday,Active
+D0267,Dr. Ahmed Ali,Internal,T10,Maadi,Cairo,C,37,Sunday,Active
+D0268,Dr. Mahmoud Hassan,Gyna,T10,Maadi,Cairo,B,63,Thursday,Active
+D0269,Dr. Mostafa Wael,Pedia,T10,Maadi,Cairo,C,53,Tuesday,Active
+D0270,Dr. Aya Saad,Pedia,T10,Maadi,Cairo,A,71,Thursday,Active
+D0271,Dr. Mina Ali,Gyna,T10,Maadi,Cairo,C,44,Wednesday,Active
+D0272,Dr. Mostafa Adel,Gyna,T10,Maadi,Cairo,B,73,Sunday,Active
+D0273,Dr. Mostafa Saad,Gyna,T10,Maadi,Cairo,C,51,Tuesday,Active
+D0274,Dr. Mina Fathy,Gyna,T10,Maadi,Cairo,B,59,Thursday,Active
+D0275,Dr. Mostafa Saad,Pedia,T11,Nasr City,Cairo,B,75,Monday,Active
+D0276,Dr. Aya Adel,Internal,T11,Nasr City,Cairo,C,57,Sunday,Active
+D0277,Dr. Rana Samir,Internal,T11,Nasr City,Cairo,A,76,Thursday,Active
+D0278,Dr. Sara Tarek,Gyna,T11,Nasr City,Cairo,C,55,Tuesday,Active
+D0279,Dr. Mariam Wael,Internal,T11,Nasr City,Cairo,B,65,Thursday,Active
+D0280,Dr. Mahmoud Samir,Internal,T11,Nasr City,Cairo,C,44,Thursday,Active
+D0281,Dr. Mina Samir,Gyna,T11,Nasr City,Cairo,C,47,Tuesday,Active
+D0282,Dr. Aya Adel,Gyna,T11,Nasr City,Cairo,B,81,Tuesday,Active
+D0283,Dr. Ahmed Saad,Pedia,T11,Nasr City,Cairo,A,83,Thursday,Active
+D0284,Dr. Mahmoud Adel,Gyna,T11,Nasr City,Cairo,B,68,Tuesday,Active
+D0285,Dr. Mostafa Samir,Internal,T11,Nasr City,Cairo,B,73,Thursday,Active
+D0286,Dr. Aya Saad,Internal,T11,Nasr City,Cairo,A,80,Monday,Active
+D0287,Dr. Sara Adel,Gyna,T11,Nasr City,Cairo,B,72,Wednesday,Active
+D0288,Dr. Ahmed Wael,Pedia,T11,Nasr City,Cairo,B,76,Tuesday,Active
+D0289,Dr. Ahmed Adel,Internal,T11,Nasr City,Cairo,B,52,Monday,Active
+D0290,Dr. Aya Fathy,Pedia,T11,Nasr City,Cairo,C,43,Thursday,Active
+D0291,Dr. Nour Ali,Internal,T11,Nasr City,Cairo,A,81,Thursday,Active
+D0292,Dr. Sara Adel,Internal,T11,Nasr City,Cairo,B,70,Wednesday,Active
+D0293,Dr. Aya Samir,Internal,T11,Nasr City,Cairo,B,69,Tuesday,Active
+D0294,Dr. Mohamed Samir,Gyna,T11,Nasr City,Cairo,A,97,Tuesday,Active
+D0295,Dr. Sara Adel,Pedia,T11,Nasr City,Cairo,B,75,Tuesday,Active
+D0296,Dr. Aya Adel,Pedia,T11,Nasr City,Cairo,B,73,Sunday,Active
+D0297,Dr. Nour Nabil,Pedia,T11,Nasr City,Cairo,A,82,Sunday,Active
+D0298,Dr. Mohamed Nabil,Pedia,T11,Nasr City,Cairo,A,83,Sunday,Active
+D0299,Dr. Ahmed Saad,Internal,T11,Nasr City,Cairo,A,87,Monday,Active
+D0300,Dr. Mahmoud Fathy,Pedia,T11,Nasr City,Cairo,A,80,Monday,Active
+D0301,Dr. Mostafa Saad,Pedia,T11,Nasr City,Cairo,A,89,Thursday,Active
+D0302,Dr. Mahmoud Emad,Internal,T11,Nasr City,Cairo,C,37,Monday,Active
+D0303,Dr. Ahmed Saad,Gyna,T11,Nasr City,Cairo,B,57,Monday,Active
+D0304,Dr. Mostafa Adel,Pedia,T11,Nasr City,Cairo,B,52,Thursday,Active
+D0305,Dr. Ahmed Adel,Internal,T11,Nasr City,Cairo,C,36,Sunday,Active
+D0306,Dr. Mariam Fathy,Pedia,T11,Nasr City,Cairo,C,63,Sunday,Active
+D0307,Dr. Mohamed Fathy,Internal,T11,Nasr City,Cairo,B,54,Wednesday,Active
+D0308,Dr. Mostafa Emad,Pedia,T11,Nasr City,Cairo,C,49,Thursday,Active
+D0309,Dr. Rana Adel,Internal,T12,Heliopolis,Cairo,B,56,Sunday,Active
+D0310,Dr. Mohamed Fathy,Internal,T12,Heliopolis,Cairo,C,47,Monday,Active
+D0311,Dr. Mariam Adel,Internal,T12,Heliopolis,Cairo,C,64,Wednesday,Active
+D0312,Dr. Sara Saad,Internal,T12,Heliopolis,Cairo,A,78,Sunday,Active
+D0313,Dr. Mostafa Fathy,Internal,T12,Heliopolis,Cairo,B,70,Monday,Active
+D0314,Dr. Mariam Tarek,Pedia,T12,Heliopolis,Cairo,B,63,Monday,Active
+D0315,Dr. Mina Hassan,Gyna,T12,Heliopolis,Cairo,C,48,Tuesday,Active
+D0316,Dr. Ahmed Wael,Pedia,T12,Heliopolis,Cairo,B,65,Thursday,Active
+D0317,Dr. Sara Wael,Internal,T12,Heliopolis,Cairo,B,62,Thursday,Active
+D0318,Dr. Ahmed Nabil,Internal,T12,Heliopolis,Cairo,B,66,Tuesday,Active
+D0319,Dr. Mostafa Tarek,Internal,T12,Heliopolis,Cairo,C,47,Sunday,Active
+D0320,Dr. Mariam Saad,Internal,T12,Heliopolis,Cairo,B,75,Monday,Active
+D0321,Dr. Nour Saad,Gyna,T12,Heliopolis,Cairo,A,78,Wednesday,Active
+D0322,Dr. Mariam Fathy,Gyna,T12,Heliopolis,Cairo,C,44,Monday,Active
+D0323,Dr. Ahmed Tarek,Pedia,T12,Heliopolis,Cairo,B,62,Sunday,Active
+D0324,Dr. Nour Nabil,Internal,T12,Heliopolis,Cairo,A,92,Tuesday,Active
+D0325,Dr. Ahmed Adel,Pedia,T12,Heliopolis,Cairo,B,75,Wednesday,Active
+D0326,Dr. Mohamed Emad,Internal,T12,Heliopolis,Cairo,B,63,Monday,Active
+D0327,Dr. Aya Adel,Pedia,T12,Heliopolis,Cairo,B,67,Wednesday,Active
+D0328,Dr. Rana Hassan,Internal,T12,Heliopolis,Cairo,C,57,Thursday,Active
+D0329,Dr. Rana Ali,Pedia,T12,Heliopolis,Cairo,C,60,Thursday,Active
+D0330,Dr. Rana Emad,Pedia,T12,Heliopolis,Cairo,C,47,Sunday,Active
+D0331,Dr. Sara Samir,Pedia,T12,Heliopolis,Cairo,B,68,Thursday,Active
+D0332,Dr. Aya Ali,Pedia,T12,Heliopolis,Cairo,B,65,Thursday,Active
+D0333,Dr. Sara Nabil,Gyna,T12,Heliopolis,Cairo,A,80,Tuesday,Active
+D0334,Dr. Mina Saad,Gyna,T12,Heliopolis,Cairo,B,68,Monday,Active
+D0335,Dr. Mina Samir,Pedia,T12,Heliopolis,Cairo,C,51,Sunday,Active
+D0336,Dr. Rana Adel,Internal,T12,Heliopolis,Cairo,A,97,Sunday,Active
+D0337,Dr. Ahmed Nabil,Gyna,T12,Heliopolis,Cairo,B,60,Monday,Active
+D0338,Dr. Rana Samir,Internal,T12,Heliopolis,Cairo,C,38,Tuesday,Active
+D0339,Dr. Sara Saad,Internal,T12,Heliopolis,Cairo,C,50,Thursday,Active
+D0340,Dr. Sara Tarek,Gyna,T12,Heliopolis,Cairo,B,63,Wednesday,Active
+D0341,Dr. Mohamed Samir,Pedia,T12,Heliopolis,Cairo,A,84,Sunday,Active
+D0342,Dr. Ahmed Saad,Pedia,T12,Heliopolis,Cairo,B,69,Wednesday,Active

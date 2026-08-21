@@ -1,0 +1,19 @@
+﻿RepID,RepName,Team,Manager,HireDate,TerminationDate,TerritoryID,TerritoryName,Governorate,BaseMonthlyTarget,Status
+R001,Ahmed Hassan,Team 1,Omar Khaled,2024-10-01,,T01,Shebin El-Kom,Monufia,91800.0,Active
+R002,Mona Samir,Team 1,Omar Khaled,2024-11-15,,T02,Menouf,Monufia,78200.0,Active
+R003,Karim Hany,Team 1,Omar Khaled,2024-09-10,,T03,Ashmoun,Monufia,80750.0,Active
+R004,Sara Mostafa,Team 1,Omar Khaled,2025-01-01,,T04,Sadat City,Monufia,86700.0,Active
+R005,Mahmoud Tarek,Team 1,Omar Khaled,2024-07-01,,T05,Tanta,Gharbia,100300.0,Active
+R006,Nada Wael,Team 1,Omar Khaled,2024-12-01,,T06,El Mahalla El Kubra,Gharbia,96900.0,Active
+R007,Mostafa Adel,Team 2,Mariam Adel,2024-08-20,,T07,Benha,Qalyubia,89250.0,Active
+R008,Yara Emad,Team 2,Mariam Adel,2024-10-12,,T08,Shubra El Kheima,Qalyubia,102000.0,Active
+R009,Hossam Ali,Team 2,Mariam Adel,2025-02-01,,T09,Qalyub,Qalyubia,76500.0,Active
+R010,Rana Ashraf,Team 2,Mariam Adel,2024-06-01,,T10,Maadi,Cairo,108800.0,Active
+R011,Mohamed Saad,Team 2,Mariam Adel,2024-06-15,,T11,Nasr City,Cairo,114750.0,Active
+R012,Nourhan Atef,Team 2,Mariam Adel,2025-04-01,,T12,Heliopolis,Cairo,112200.0,Active
+R013,Khaled Ibrahim,Team 3,Youssef Nabil,2025-04-15,,T01,Shebin El-Kom,Monufia,91800.0,Active
+R014,Aya Magdy,Team 3,Youssef Nabil,2025-05-01,2025-12-31,T05,Tanta,Gharbia,100300.0,Inactive
+R015,Amr Fathy,Team 3,Youssef Nabil,2025-07-01,,T08,Shubra El Kheima,Qalyubia,102000.0,Active
+R016,Salma Osama,Team 3,Youssef Nabil,2025-09-01,,T11,Nasr City,Cairo,114750.0,Active
+R017,Eslam Sameh,Team 3,Youssef Nabil,2026-01-01,,T03,Ashmoun,Monufia,80750.0,Active
+R018,Farah Nader,Team 3,Youssef Nabil,2026-01-15,,T10,Maadi,Cairo,108800.0,Active

@@ -1,0 +1,13 @@
+﻿TerritoryID,TerritoryName,Governorate,Region,MarketPotentialIndex
+T01,Shebin El-Kom,Monufia,Delta,1.08
+T02,Menouf,Monufia,Delta,0.92
+T03,Ashmoun,Monufia,Delta,0.95
+T04,Sadat City,Monufia,Delta,1.02
+T05,Tanta,Gharbia,Delta,1.18
+T06,El Mahalla El Kubra,Gharbia,Delta,1.14
+T07,Benha,Qalyubia,Greater Cairo North,1.05
+T08,Shubra El Kheima,Qalyubia,Greater Cairo North,1.2
+T09,Qalyub,Qalyubia,Greater Cairo North,0.9
+T10,Maadi,Cairo,Greater Cairo,1.28
+T11,Nasr City,Cairo,Greater Cairo,1.35
+T12,Heliopolis,Cairo,Greater Cairo,1.32
