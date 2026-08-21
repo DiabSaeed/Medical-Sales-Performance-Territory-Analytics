@@ -4,7 +4,7 @@
 
 let
     Source = Csv.Document(
-        File.Contents("D:\Projects\Medical Sales Performance & Territory Analytics\Sales_Raw.csv"),
+        File.Contents("D:\Projects\Medical Sales Performance & Territory Analytics\Sales_Raw.csv"), // Update this with your Dir and do this in the whole doc
         [Delimiter=",", Columns=22, Encoding=65001, QuoteStyle=QuoteStyle.None]
     ),
     #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
