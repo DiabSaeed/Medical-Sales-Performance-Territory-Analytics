@@ -90,7 +90,3 @@ The final visit table is intentionally structured as a **fact table**. Represent
 ## Date Parsing Assumption
 
 The date logic first attempts culture-based parsing with `en-GB`, then `en-US`, and finally an explicit `dd/MM/yyyy` format. Ambiguous date values such as `05/07/2025` will normally be interpreted according to the first successful parsing rule, so the source-date convention should be documented as a business assumption if no deterministic source-system rule exists.
-
-## Review Note
-
-`FollowUpRequired` is currently standardized to the text values `True` and `False`. For the final analytical model, converting this column to a native **Logical / Boolean** data type would make the schema more explicit and simplify some calculations and filters.
