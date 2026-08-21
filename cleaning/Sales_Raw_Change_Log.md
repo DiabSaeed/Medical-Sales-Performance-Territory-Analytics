@@ -12,33 +12,39 @@ This document records all Power Query transformations applied to `Sales_Raw.csv`
 | # | Power Query Step | Columns Affected | Transformation | Purpose |
 |---:|---|---|---|---|
 | 1 | `Source` | All columns | Imported the CSV using comma delimiter and UTF-8 encoding. | Load the raw sales dataset. |
-| 2 | `Promoted Headers` | All columns | Promoted the first row to headers. | Use the correct business field names. |
-| 3 | `Changed Type` | All columns | Assigned controlled data types while keeping `InvoiceDateRaw` as text. | Preserve raw dates for later parsing and establish the initial schema. |
-| 4 | `Removed Duplicates` | `InvoiceLineID` | Removed duplicate records based on `InvoiceLineID`. | Prevent duplicate sales lines from inflating KPIs. |
-| 5 | `Removed Columns` | `RepNameRaw`, `AccountNameRaw`, `ProductNameRaw`, `AccountTypeRaw` | Removed descriptive fields available in dimension tables. | Reduce redundancy and prepare the fact table for dimensional modeling. |
-| 6 | `Trimmed Text` | `TerritoryRaw` | Removed leading and trailing spaces. | Standardize territory values. |
-| 7 | `Capitalized Each Word` | `TerritoryRaw` | Applied Proper Case. | Standardize territory capitalization. |
-| 8 | `Trimmed Text1` | `Governorate` | Removed leading and trailing spaces. | Standardize governorate values. |
-| 9 | `Cleaned Text` | `Governorate`, `TerritoryRaw` | Removed non-printable characters. | Prevent hidden-character mismatches in joins and grouping. |
-| 10 | `Capitalized Each Word1` | `Governorate` | Applied Proper Case. | Standardize governorate naming. |
-| 11 | `Trimmed Text2` | `TherapeuticArea` | Removed leading and trailing spaces. | Standardize therapeutic-area values. |
-| 12 | `Capitalized Each Word2` | `TherapeuticArea` | Applied Proper Case. | Standardize therapeutic-area capitalization. |
-| 13 | `Changed Type1` | `DiscountPct` | Converted to Percentage type. | Ensure discounts are interpreted correctly in calculations. |
-| 14 | `Trimmed Text3` | `DataSource`, `OrderChannel`, `PaymentStatus`, `PaymentTerms` | Removed leading and trailing spaces. | Standardize operational categorical fields. |
-| 15 | `Cleaned Text1` | `DataSource`, `OrderChannel`, `PaymentStatus`, `PaymentTerms` | Removed non-printable characters. | Avoid hidden-value inconsistencies. |
-| 16 | `Capitalized Each Word3` | `DataSource`, `OrderChannel`, `PaymentStatus`, `PaymentTerms` | Applied Proper Case. | Standardize reporting labels. |
-| 17 | `Trimmed Text4` | `RepID` | Removed leading and trailing spaces. | Prepare `RepID` for model relationships. |
-| 18 | `Added Custom` | `InvoiceDateRaw` → `InvoiceDate` | Parsed multiple date formats: `dd/MM/yyyy`, `MM/dd/yyyy`, `yyyy-MM-dd`, and `dd-MMM-yyyy`; unresolved values return `null`. | Standardize mixed source date formats into one analytical date. |
-| 19 | `Removed Columns1` | `InvoiceDateRaw` | Removed the original raw date column. | Retain only the standardized analytical date field. |
-| 20 | `Trimmed Text5` | `RepID` | Re-applied trimming. | Reinforce ID standardization. |
-| 21 | `Cleaned Text2` | `RepID` | Removed non-printable characters. | Prevent relationship mismatches. |
-| 22 | `Trimmed Text6` | `InvoiceID` | Removed leading and trailing spaces. | Standardize invoice identifiers. |
-| 23 | `Cleaned Text3` | `InvoiceID` | Removed non-printable characters. | Ensure reliable invoice grouping and matching. |
-| 24 | `Trimmed Text7` | `InvoiceLineID` | Removed leading and trailing spaces. | Standardize the transaction-level key. |
-| 25 | `Cleaned Text4` | `InvoiceLineID` | Removed non-printable characters. | Protect the unique line identifier from hidden-character issues. |
-| 26 | `Renamed Columns` | `TerritoryRaw`, `ProductCodeRaw` | Renamed to `Territory` and `ProductCode`. | Remove the `Raw` suffix after standardization. |
-| 27 | `Changed Type2` | `InvoiceDate` | Explicitly assigned Date type. | Support time intelligence and date-model relationships. |
-| 28 | `Reordered Columns` | All retained columns | Reordered the final columns into a logical analytical structure. | Improve readability and prepare the table for loading to the model. |
+| 2 | `Promoted Headers` | All columns | Promoted the first row to headers. | Apply business field names. |
+| 3 | `Changed Type` | All columns | Assigned initial text, integer, and numeric data types while retaining `InvoiceDateRaw` as text. | Establish a controlled schema while preserving raw dates for custom parsing. |
+| 4 | `Removed Duplicates` | `InvoiceLineID` | Removed duplicates based on `InvoiceLineID`. | Enforce one row per invoice line and prevent inflated sales KPIs. |
+| 5 | `Removed Columns` | `RepNameRaw`, `AccountNameRaw`, `ProductNameRaw`, `AccountTypeRaw` | Removed descriptive attributes available from dimensions. | Reduce fact-table redundancy. |
+| 6 | `Trimmed Text` | `TerritoryRaw` | Removed leading/trailing spaces. | Prepare territory values for standardization. |
+| 7 | `Cleaned Text5` | `TerritoryRaw` | Removed non-printable characters. | Prevent hidden-character mismatches. |
+| 8 | `Capitalized Each Word` | `TerritoryRaw` | Applied Proper Case. | Standardize territory capitalization. |
+| 9 | `Trimmed Text1` | `Governorate` | Removed leading/trailing spaces. | Prepare governorate values for standardization. |
+| 10 | `Cleaned Text` | `Governorate` | Removed non-printable characters. | Prevent hidden-character inconsistencies. |
+| 11 | `Capitalized Each Word1` | `Governorate` | Applied Proper Case. | Standardize governorate naming. |
+| 12 | `Trimmed Text2` | `TherapeuticArea` | Removed leading/trailing spaces. | Prepare therapeutic-area values for standardization. |
+| 13 | `Cleaned Text8` | `TherapeuticArea` | Removed non-printable characters. | Prevent hidden-value inconsistencies. |
+| 14 | `Capitalized Each Word2` | `TherapeuticArea` | Applied Proper Case. | Standardize therapeutic-area capitalization. |
+| 15 | `Changed Type1` | `DiscountPct` | Converted the field to Percentage type. | Ensure correct interpretation in calculations and reports. |
+| 16 | `Trimmed Text3` | `DataSource`, `OrderChannel`, `PaymentStatus`, `PaymentTerms` | Removed leading/trailing spaces. | Prepare operational categorical fields for standardization. |
+| 17 | `Cleaned Text1` | `DataSource`, `OrderChannel`, `PaymentStatus`, `PaymentTerms` | Removed non-printable characters. | Prevent hidden-value inconsistencies. |
+| 18 | `Capitalized Each Word3` | `DataSource`, `OrderChannel`, `PaymentStatus`, `PaymentTerms` | Applied Proper Case. | Standardize reporting labels. |
+| 19 | `Trimmed Text4` | `RepID` | Removed leading/trailing spaces. | Prepare the representative key for relationships. |
+| 20 | `Added Custom` | `InvoiceDateRaw` → `InvoiceDate` | Parsed `dd/MM/yyyy`, `MM/dd/yyyy`, `yyyy-MM-dd`, and `dd-MMM-yyyy`; unresolved values return `null`. | Standardize mixed raw date formats. |
+| 21 | `Removed Columns1` | `InvoiceDateRaw` | Removed the raw date after creating `InvoiceDate`. | Retain the standardized analytical date only. |
+| 22 | `Cleaned Text2` | `RepID` | Removed non-printable characters. | Prevent relationship mismatches with `Dim_Reps`. |
+| 23 | `Trimmed Text6` | `InvoiceID` | Removed leading/trailing spaces. | Standardize invoice identifiers. |
+| 24 | `Cleaned Text3` | `InvoiceID` | Removed non-printable characters. | Ensure reliable invoice grouping and matching. |
+| 25 | `Trimmed Text7` | `InvoiceLineID` | Removed leading/trailing spaces. | Standardize the transaction-level key. |
+| 26 | `Cleaned Text4` | `InvoiceLineID` | Removed non-printable characters. | Protect the unique invoice-line key. |
+| 27 | `Renamed Columns` | `TerritoryRaw`, `ProductCodeRaw` | Renamed to `Territory` and `ProductCode`. | Remove the `Raw` suffix after preparation for analytical use. |
+| 28 | `Changed Type2` | `InvoiceDate` | Assigned Date type. | Enable date relationships and time intelligence. |
+| 29 | `Reordered Columns` | All retained columns | Reordered the final fields. | Improve readability and model preparation. |
+| 30 | `Trimmed Text5` | `AccountID` | Removed leading/trailing spaces. | Prepare the account key for relationships. |
+| 31 | `Cleaned Text6` | `AccountID` | Removed non-printable characters. | Prevent mismatches with `Dim_Accounts`. |
+| 32 | `Trimmed Text8` | `ProductCode` | Removed leading/trailing spaces. | Prepare the product key for relationships. |
+| 33 | `Cleaned Text7` | `ProductCode` | Removed non-printable characters. | Prevent mismatches with `Dim_Products`. |
+| 34 | `Uppercased Text` | `InvoiceLineID`, `InvoiceID`, `RepID`, `AccountID`, `ProductCode` | Converted key identifiers to uppercase. | Enforce consistent key formatting across the analytical model. |
 
 ## Removed Fields
 
@@ -55,12 +61,32 @@ This document records all Power Query transformations applied to `Sales_Raw.csv`
 ## Data Quality Rules Applied
 
 - Removed duplicate sales lines using `InvoiceLineID`.
-- Standardized text fields with Trim, Clean, and Proper Case transformations.
+- Standardized descriptive fields with Trim, Clean, and Proper Case.
+- Standardized key fields with Trim, Clean, and uppercase formatting.
 - Removed redundant descriptive attributes from the fact table.
-- Standardized mixed raw date formats into a single `InvoiceDate`.
-- Cleaned key identifiers before model relationships.
+- Standardized mixed raw date formats into `InvoiceDate`.
 - Explicitly assigned percentage and date data types.
+- Prepared `RepID`, `AccountID`, and `ProductCode` for dimension relationships.
+- Preserved one-row-per-invoice-line granularity.
 
-## Important Date Parsing Assumption
+## Modeling Preparation
 
-The date logic attempts `dd/MM/yyyy` before `MM/dd/yyyy`. Therefore, an ambiguous value such as `05/07/2025` is interpreted as **5 July 2025** before the US-style interpretation is attempted. This should be documented as a business assumption unless each source system has a deterministic date-format rule.
+The cleaned dataset is structured as the primary **sales fact table**.
+
+- `RepID` → `Dim_Reps`
+- `AccountID` → `Dim_Accounts`
+- `ProductCode` → `Dim_Products`
+- `InvoiceDate` → Date dimension
+
+Descriptive representative, account, and product attributes are intentionally excluded from the fact table to reduce redundancy and support a star-schema design.
+
+## Date Parsing Assumption
+
+The parsing logic attempts:
+
+1. `dd/MM/yyyy` (`en-GB`)
+2. `MM/dd/yyyy` (`en-US`)
+3. `yyyy-MM-dd`
+4. `dd-MMM-yyyy`
+
+For ambiguous dates, `dd/MM/yyyy` takes precedence. For example, `05/07/2025` is interpreted as **5 July 2025**.
